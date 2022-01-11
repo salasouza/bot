@@ -32,17 +32,17 @@ parse.add_argument("-c", "--regression",
                     default='Regressão linear',
                     help='Regressão linear')
 
-parse.add_argument("-f1", "--factor1",
+parse.add_argument("-x", "--factor1",
                     required=False,
                     default='Factors',
                     help='Variavel independente')
 
-parse.add_argument("-f2", "--factor2",
+parse.add_argument("-w", "--factor2",
                     required=False,
                     default='Factors',
                     help='Variavel independente')
 
-parse.add_argument("-f3", "--factor3",
+parse.add_argument("-z", "--factor3",
                     required=False,
                     default='Factors',
                     help='Variavel independente')
