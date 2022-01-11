@@ -17,12 +17,17 @@ parse.add_argument("-o","--output",
                     default='Arquivo de saida',
                     help='Path do output')
 
-parse.add_argument("-a", "--anova",
+parse.add_argument("-a", "--anova1",
                     required=False,
                     default='Análise de Variância',
                     help='ANOVA simples')
 
-parse.add_argument("-b", "--regressao",
+parse.add_argument("-b", "--anova2",
+                    required=False,
+                    default='Análise de Variância',
+                    help='ANOVA two way')
+
+parse.add_argument("-b", "--regression",
                     required=False,
                     default='Regressão linear',
                     help='Regressão linear')
