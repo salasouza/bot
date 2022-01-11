@@ -17,30 +17,40 @@ parse.add_argument("-o","--output",
                     default='Arquivo de saida',
                     help='Path do output')
 
-parse.add_argument("-a", "--anova1",
+parse.add_argument("-a", "--anova-one",
                     required=False,
                     default='Análise de Variância',
-                    help='ANOVA simples')
+                    help='ANOVA one-way')
 
-parse.add_argument("-b", "--anova2",
+parse.add_argument("-b", "--anova-two",
                     required=False,
                     default='Análise de Variância',
-                    help='ANOVA two way')
+                    help='ANOVA two-way')
 
-parse.add_argument("-b", "--regression",
+parse.add_argument("-c", "--regression",
                     required=False,
                     default='Regressão linear',
                     help='Regressão linear')
 
-parse.add_argument("-f", "--factor1",
+parse.add_argument("-f1", "--factor1",
                     required=False,
-                    default='Análise de Variância',
-                    help='ANOVA simples')
+                    default='Factors',
+                    help='Variavel independente')
+
+parse.add_argument("-f2", "--factor2",
+                    required=False,
+                    default='Factors',
+                    help='Variavel independente')
+
+parse.add_argument("-f3", "--factor3",
+                    required=False,
+                    default='Factors',
+                    help='Variavel independente')
 
 parse.add_argument("-r", "--response",
                     required=False,
-                    default='Análise de Variância',
-                    help='ANOVA simples')
+                    default='Resposta',
+                    help='Variavel dependente')
 
 args = vars(parse.parse_args())
 print(args["input"])
