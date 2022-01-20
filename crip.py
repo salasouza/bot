@@ -4,7 +4,7 @@ import cryptocode
 
 # print(myEncryptedMessage)   
 
-myDecryptedMessage = cryptocode.decrypt("UfwmfI3x", "ursulaleguin")
+myDecryptedMessage = cryptocode.decrypt("abcde", "ursulaleguin")
 
 print(myDecryptedMessage)
 
